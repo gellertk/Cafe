@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Table {
+struct Table : Equatable {
     
     var status : Status
     var number : Int

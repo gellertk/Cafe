@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import UIKit
+
 
 class Cafe {
     
@@ -25,12 +25,8 @@ class Cafe {
             }
         }
     }
-                                
-func makeTableFree() {
-                
-    }
     
-    func addRandomTableStatus(_ tablesCount: Int, _ chosenTables: [Int]) {
+    func addRandomTableStatus(_ tablesCount: Int) {
         
         for status in Table.Status.allCases {
             var reservedTables = [Table]()
@@ -40,11 +36,7 @@ func makeTableFree() {
                 }
                 while reservedTables.count < countForRandomCreate {
                     let randomIndex = Int.random(in: 0...tablesCount - 1)
-                    if !tables.contains(where: {
-                        return $0.number == (randomIndex + 1)
-                    }), !reservedTables.contains(where: {
-                        return $0.number == (randomIndex + 1)
-                    }) {
+                    if !tables.contains(where: {return $0.number == (randomIndex + 1)}), !reservedTables.contains(where: {return $0.number == (randomIndex + 1)}) {
                         reservedTables.append(Table.init(status: status, number: randomIndex + 1))
                     }
                 }
@@ -53,8 +45,8 @@ func makeTableFree() {
         }
     }
     
-    init(tablesCount: Int, chosenTables: [Int]) {
-        addRandomTableStatus(tablesCount, chosenTables)
+    init(tablesCount: Int) {
+        addRandomTableStatus(tablesCount)
     }
     
 }
