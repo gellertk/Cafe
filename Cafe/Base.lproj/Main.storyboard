@@ -149,6 +149,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="2"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="Rne-ZA-9xk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bke-fR-lTT">
                                                 <rect key="frame" x="264" y="0.0" width="124" height="149.33333333333334"/>
@@ -157,6 +160,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="3"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="VSX-Ya-hx2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -170,6 +176,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="4"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="tFG-Ik-6pg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SP6-Za-L6q">
                                                 <rect key="frame" x="132" y="0.0" width="124" height="149"/>
@@ -178,6 +187,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="5"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="P7P-At-1v9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYe-TY-Vu1">
                                                 <rect key="frame" x="264" y="0.0" width="124" height="149"/>
@@ -186,6 +198,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="6"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="1ab-XV-Mbi"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -199,6 +214,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="7"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="UU4-kY-CcU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M63-XS-Rhy">
                                                 <rect key="frame" x="132" y="0.0" width="124" height="149.33333333333334"/>
@@ -207,6 +225,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="8"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="R8y-xW-9Sy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4h-JU-EuG">
                                                 <rect key="frame" x="264" y="0.0" width="124" height="149.33333333333334"/>
@@ -215,6 +236,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="9"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="rg3-Bm-EWK"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -228,6 +252,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="10"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="JlJ-Dw-abf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTA-ua-JmI">
                                                 <rect key="frame" x="132" y="0.0" width="124" height="149"/>
@@ -236,6 +263,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="11"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="4iM-A6-aMX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ft-NO-pzv">
                                                 <rect key="frame" x="264" y="0.0" width="124" height="149"/>
@@ -244,6 +274,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="12"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="rDp-N6-sbY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -257,6 +290,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="13"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="a1z-XY-QKL"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neL-tL-YrA">
                                                 <rect key="frame" x="132" y="0.0" width="124" height="149.33333333333334"/>
@@ -265,6 +301,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="14"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="zTz-sG-b6A"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqe-Ru-5KV">
                                                 <rect key="frame" x="264" y="0.0" width="124" height="149.33333333333334"/>
@@ -273,6 +312,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="15"/>
+                                                <connections>
+                                                    <action selector="tapOnTable:" destination="QNU-gP-MHG" eventType="touchUpInside" id="lic-9g-Yp3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

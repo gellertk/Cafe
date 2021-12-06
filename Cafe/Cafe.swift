@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Cafe {
     
@@ -15,14 +16,18 @@ class Cafe {
         if let tableIndex = tables.firstIndex(where: { ()
             return $0.number == tableNumber
         }) {
-            var table = tables[tableIndex]
-            switch table.status {
-            case .isChosen : table.status = .isChosen
-            case .isFree : table.status = .isChosen
-            case .isBusy : table.status = .isChosen
-            case .isReserved : table.status = .isChosen
+            if tables[tableIndex].status == .isChosen {
+                tables[tableIndex].status = .isFree
+            } else if tables[tableIndex].status == .isFree {
+                tables[tableIndex].status = .isChosen
+            } else if tables[tableIndex].status == .isReserved {
+                
             }
         }
+    }
+                                
+func makeTableFree() {
+                
     }
     
     func addRandomTableStatus(_ tablesCount: Int, _ chosenTables: [Int]) {

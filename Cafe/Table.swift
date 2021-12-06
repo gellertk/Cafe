@@ -25,7 +25,7 @@ struct Table {
                 case .isBusy: return (UIColor.red, "ЗАНЯТ", 4)
                 case .isReserved: return (UIColor.systemPink, "РЕЗЕРВ", 2)
                 case .isFree: return (UIColor.gray, "СВОБОДЕН", 0)
-                case .isChosen: return (UIColor.green, "ВЫБРАН", nil)
+                case .isChosen: return (UIColor.systemGreen, "ВЫБРАН", nil)
             }
         }
         
