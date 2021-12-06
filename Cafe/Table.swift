@@ -1,0 +1,36 @@
+//
+//  Table.swift
+//  Cafe
+//
+//  Created by Кирилл  Геллерт on 02.12.2021.
+//
+
+import Foundation
+import UIKit
+
+struct Table {
+    
+    var status : Status
+    var number : Int
+    
+    enum Status : CaseIterable {
+        
+        case isBusy
+        case isReserved
+        case isFree
+        case isChosen
+        
+        var parametres: (backColor: UIColor, title: String, countForRandomCreate: Int?) {
+            switch self {
+                case .isBusy: return (UIColor.red, "ЗАНЯТ", 4)
+                case .isReserved: return (UIColor.systemPink, "РЕЗЕРВ", 2)
+                case .isFree: return (UIColor.gray, "СВОБОДЕН", 0)
+                case .isChosen: return (UIColor.green, "ВЫБРАН", nil)
+            }
+        }
+        
+    }
+    
+}
+
+
