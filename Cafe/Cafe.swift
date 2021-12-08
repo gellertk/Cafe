@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 class Cafe {
     
     var tables = [Table]()
@@ -26,35 +25,33 @@ class Cafe {
         }
     }
     
-    func addRandomTableStatus(_ tablesCount: Int) {
-        
+    func fillWithRandomStatusTables(_ tablesCount: Int, _ chosenTableNumbers: [Int]) {
         for status in Table.Status.allCases {
             var reservedTables = [Table]()
             if var countForRandomCreate = status.parametres.countForRandomCreate  {
                 if countForRandomCreate == 0 {
-                    countForRandomCreate = tablesCount - tables.count
+                    countForRandomCreate = tablesCount - tables.count - chosenTableNumbers.count
                 }
                 while reservedTables.count < countForRandomCreate {
                     let randomIndex = Int.random(in: 0...tablesCount - 1)
-                    if !tables.contains(where: {return $0.number == (randomIndex + 1)}), !reservedTables.contains(where: {return $0.number == (randomIndex + 1)}) {
+                    if !tables.contains(where: {$0.number == (randomIndex + 1)}), !reservedTables.contains(where: {$0.number == (randomIndex + 1)}),
+                       !chosenTableNumbers.contains(where: {$0 == (randomIndex + 1)}) {
                         reservedTables.append(Table.init(status: status, number: randomIndex + 1))
                     }
                 }
                 tables += reservedTables
             }
         }
+        for tableNumber in chosenTableNumbers {
+            tables.append(Table.init(status: .isChosen, number: tableNumber))
+        }
     }
     
-    init(tablesCount: Int) {
-        addRandomTableStatus(tablesCount)
+    init(tablesCount: Int, chosenTableNumbers: [Int]) {
+        fillWithRandomStatusTables(tablesCount, chosenTableNumbers)
     }
     
 }
 
-func isValidEmail(emailID:String) -> Bool {
-    let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-    let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-    return emailTest.evaluate(with: emailID)
-}
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBB19666276146BA007022EA /* OtherFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB19665276146BA007022EA /* OtherFunction.swift */; };
 		CBC23A612759208300400EA3 /* TableChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC23A602759208300400EA3 /* TableChooserViewController.swift */; };
 		CBC23A6327593C8D00400EA3 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC23A6227593C8D00400EA3 /* Table.swift */; };
 		CBCBF84127537D0E00217EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBF84027537D0E00217EE0 /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CBB19665276146BA007022EA /* OtherFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherFunction.swift; sourceTree = "<group>"; };
 		CBC23A602759208300400EA3 /* TableChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableChooserViewController.swift; sourceTree = "<group>"; };
 		CBC23A6227593C8D00400EA3 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		CBCBF83D27537D0E00217EE0 /* Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,7 @@
 			children = (
 				CBCBF84427537D0E00217EE0 /* SignInViewController.swift */,
 				CBC23A6227593C8D00400EA3 /* Table.swift */,
+				CBB19665276146BA007022EA /* OtherFunction.swift */,
 				CBCBF85527537F6B00217EE0 /* RegistationViewController.swift */,
 				CBC23A602759208300400EA3 /* TableChooserViewController.swift */,
 				CBCBF85727537F8E00217EE0 /* CheckViewController.swift */,
@@ -170,6 +173,7 @@
 				CBC23A612759208300400EA3 /* TableChooserViewController.swift in Sources */,
 				CBCBF84527537D0E00217EE0 /* SignInViewController.swift in Sources */,
 				CBCBF85E2753EBC700217EE0 /* UITextFieldExtension.swift in Sources */,
+				CBB19666276146BA007022EA /* OtherFunction.swift in Sources */,
 				CBCBF84127537D0E00217EE0 /* AppDelegate.swift in Sources */,
 				CBCBF85A27539BBE00217EE0 /* Cafe.swift in Sources */,
 				CBCBF85627537F6B00217EE0 /* RegistationViewController.swift in Sources */,

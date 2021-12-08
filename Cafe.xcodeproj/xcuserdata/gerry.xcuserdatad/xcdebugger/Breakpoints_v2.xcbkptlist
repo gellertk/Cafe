@@ -7,251 +7,47 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1875D8A6-7E1C-43C2-A69B-C76F55FF784E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cafe/SignInViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4F6D3493-32DB-47B4-8F8C-F7E0E6CA94D3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cafe/SignInViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "imageTapped(tapGestureRecognizer:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "127D1C2D-5A4F-4C0F-9E31-BB5F767D22B3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cafe/SignInViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "imageTapped(tapGestureRecognizer:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8C34BB9A-D21F-4539-852E-346342756DB2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cafe/TableChooserViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E5C07632-8E5D-4192-B08C-57C94EA17A70"
+            uuid = "8DE064E1-1D92-4278-9365-AF1A087C0E4F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cafe/Cafe.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "addRandomTableStatus(_:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fillTablesWithRandomStatus(_:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "64C17844-25E5-47B4-9EAD-5F95C1641CC5"
+            uuid = "428F274F-82A8-48B8-ADD3-817DB175C0A7"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cafe/Cafe.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "addRandomTableStatus(_:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fillTablesWithRandomStatus(_:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "64C17844-25E5-47B4-9EAD-5F95C1641CC5 - 3f9cb585e5e9ec60"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cafe.Cafe.__allocating_init(tablesCount: Swift.Int) -&gt; Cafe.Cafe"
-                  moduleName = "Cafe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gerry/Desktop/SWIFT/APPS/Cafe/Cafe/Cafe.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "35">
-               </Location>
-               <Location
-                  uuid = "64C17844-25E5-47B4-9EAD-5F95C1641CC5 - ae21a91cd90773fb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cafe.Cafe.init(tablesCount: Swift.Int) -&gt; Cafe.Cafe"
-                  moduleName = "Cafe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gerry/Desktop/SWIFT/APPS/Cafe/Cafe/Cafe.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "42">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4760C2D2-2737-4C9E-9DA2-81130F76E5BE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cafe/TableChooserViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "TableChooserViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "4760C2D2-2737-4C9E-9DA2-81130F76E5BE - 84c0477630ef1741"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cafe.TableChooserViewController.tablesButtons.getter : Swift.Optional&lt;Swift.Array&lt;__C.UIButton&gt;&gt;"
-                  moduleName = "Cafe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gerry/Desktop/SWIFT/APPS/Cafe/Cafe/TableChooserViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "90">
-               </Location>
-               <Location
-                  uuid = "4760C2D2-2737-4C9E-9DA2-81130F76E5BE - fd57e4765e546fb9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cafe.TableChooserViewController.tablesButtons.setter : Swift.Optional&lt;Swift.Array&lt;__C.UIButton&gt;&gt;"
-                  moduleName = "Cafe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gerry/Desktop/SWIFT/APPS/Cafe/Cafe/TableChooserViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "116">
-               </Location>
-               <Location
-                  uuid = "4760C2D2-2737-4C9E-9DA2-81130F76E5BE - 9b844fa8b9b40ec7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cafe.TableChooserViewController.tablesButtons.modify : Swift.Optional&lt;Swift.Array&lt;__C.UIButton&gt;&gt;"
-                  moduleName = "Cafe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gerry/Desktop/SWIFT/APPS/Cafe/Cafe/TableChooserViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  uuid = "4760C2D2-2737-4C9E-9DA2-81130F76E5BE - fd17862980bc2e1b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cafe.TableChooserViewController.tablesButtons.modify : Swift.Optional&lt;Swift.Array&lt;__C.UIButton&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "Cafe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gerry/Desktop/SWIFT/APPS/Cafe/Cafe/TableChooserViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "15">
-               </Location>
-               <Location
-                  uuid = "4760C2D2-2737-4C9E-9DA2-81130F76E5BE - 51a9d01cdd3bae51"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cafe.TableChooserViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Cafe.TableChooserViewController"
-                  moduleName = "Cafe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gerry/Desktop/SWIFT/APPS/Cafe/Cafe/TableChooserViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "147">
-               </Location>
-               <Location
-                  uuid = "4760C2D2-2737-4C9E-9DA2-81130F76E5BE - 26671d2062974a5e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Cafe.TableChooserViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Cafe.TableChooserViewController&gt;"
-                  moduleName = "Cafe"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gerry/Desktop/SWIFT/APPS/Cafe/Cafe/TableChooserViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "104">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "12CBC9B2-A93E-47D9-B8A3-14CEC2AE2B4E"
+            uuid = "EA3E737F-34DC-4416-BE81-CA52B7DA3C26"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cafe/Cafe.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "chooseTable(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -259,96 +55,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9D7A87FD-E5D1-42EB-A9D8-50F4D48B12A8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cafe/TableChooserViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "tapOnTable(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "492E656D-9B5B-4628-818D-4B3119D798FC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cafe/Cafe.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "chooseTable(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9BABAF41-4227-4994-B089-50A8BEA5F79E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cafe/Cafe.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "addRandomTableStatus(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E94DB93F-1D71-4DBC-B7F7-7F9E3B5E2D7B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cafe/Cafe.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "chooseTable(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B0AA6231-766A-4A04-A4F5-1166E247ACA3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cafe/RegistationViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "updateTableNumbers(tables:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8CE52A3A-7CCB-4731-BCE1-6C6E29560E77"
+            uuid = "35591712-8764-4F1F-A562-B16F83DCDF97"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Cafe/TableChooserViewController.swift"
+            filePath = "Cafe/Cafe.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "setChosenTables()"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "chooseTable(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

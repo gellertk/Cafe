@@ -15,20 +15,20 @@ class RegistationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         for case let textField as UITextField in self.view.subviews {
             textField.addOnlyBottomBorder()
         }
     }
     
     @IBAction func showTables(_ sender: UITextField) {
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                guard let secondViewController = storyboard.instantiateViewController(identifier: "tableChooserVC") as? TableChooserViewController else { return }
-        if let chosenTableNumbers = txtTableNumber.text {
-            secondViewController.chosenTableNumbers = chosenTableNumbers
+        guard let tableChooserVC = storyboard.instantiateViewController(identifier: "tableChooserVC") as? TableChooserViewController else { return }
+        if var chosenTableString = txtTableNumber.text, chosenTableString != "" {
+            chosenTableString = chosenTableString.replacingOccurrences(of: " ", with: "")
+            let chosenTablesNumbers = chosenTableString.components(separatedBy: ",").map( {Int($0) ?? 0} )
+            tableChooserVC.chosenTablesNumbers = chosenTablesNumbers
         }
-        present(secondViewController, animated: true, completion: nil)
+        present(tableChooserVC, animated: true, completion: nil)
     }
     
     func updateTableNumbers(tables: [Table]) {

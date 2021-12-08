@@ -11,9 +11,9 @@ class TableChooserViewController: UIViewController {
     
     @IBOutlet var tablesButtons: [UIButton]!
     
-    var chosenTableNumbers : String?
+    var chosenTablesNumbers = [Int]()
     
-    lazy var cafe = Cafe(tablesCount: tablesButtons.count)
+    lazy var cafe = Cafe(tablesCount: tablesButtons.count, chosenTableNumbers: chosenTablesNumbers)
     
     func updateViewTables() {
         for table in cafe.tables {
@@ -33,7 +33,8 @@ class TableChooserViewController: UIViewController {
         super.viewWillDisappear(animated)
         if let regVC = presentingViewController as? RegistationViewController {
             DispatchQueue.main.async {
-                let chosenTables = self.cafe.tables.filter { $0.status == .isChosen }
+                var chosenTables = self.cafe.tables.filter {$0.status == .isChosen}
+                chosenTables.sort {$0.number < $1.number}
                 regVC.updateTableNumbers(tables: chosenTables)
             }
         }
@@ -47,17 +48,9 @@ class TableChooserViewController: UIViewController {
     }
     
     func setChosenTables() {
-        if let stringChosenNumbers = chosenTableNumbers {
-            var chosenTables = [Int]()
-            for index in stringChosenNumbers.indices {
-                if stringChosenNumbers[index] != ",", stringChosenNumbers[index] != " " {
-                    chosenTables.append(Int(String(stringChosenNumbers[index]))!)
-                }
-            }
-            for tableIndex in cafe.tables.indices {
-                if chosenTables.contains(where: {return $0 == cafe.tables[tableIndex].number}) {
-                    cafe.tables[tableIndex].status = .isChosen
-                }
+        for tableIndex in cafe.tables.indices {
+            if chosenTablesNumbers.contains(where: {return $0 == cafe.tables[tableIndex].number}) {
+                cafe.tables[tableIndex].status = .isChosen
             }
         }
     }
