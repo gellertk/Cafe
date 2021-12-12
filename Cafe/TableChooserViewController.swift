@@ -8,10 +8,12 @@
 import UIKit
 
 class TableChooserViewController: UIViewController {
-    
+
     @IBOutlet var tablesButtons: [UIButton]!
     
     var chosenTablesNumbers = [Int]()
+    
+    var delegate: ViewControllerDelegate?
     
     lazy var cafe = Cafe(tablesCount: tablesButtons.count, chosenTableNumbers: chosenTablesNumbers)
     
@@ -23,21 +25,23 @@ class TableChooserViewController: UIViewController {
         }
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+//        if let regVC = presentingViewController as? RegistationViewController {
+//            DispatchQueue.main.async {
+//
+//                regVC.updateTableNumbers(tables: chosenTables)
+//            }
+//        }
+        var chosenTables = self.cafe.tables.filter {$0.status == .isChosen}
+        chosenTables.sort {$0.number < $1.number}
+        delegate?.updateTableNumbers(tables: chosenTables)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setChosenTables()
         updateViewTables()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        if let regVC = presentingViewController as? RegistationViewController {
-            DispatchQueue.main.async {
-                var chosenTables = self.cafe.tables.filter {$0.status == .isChosen}
-                chosenTables.sort {$0.number < $1.number}
-                regVC.updateTableNumbers(tables: chosenTables)
-            }
-        }
     }
     
     @IBAction func tapOnTable(_ sender: UIButton) {
@@ -49,7 +53,7 @@ class TableChooserViewController: UIViewController {
     
     func setChosenTables() {
         for tableIndex in cafe.tables.indices {
-            if chosenTablesNumbers.contains(where: {return $0 == cafe.tables[tableIndex].number}) {
+            if chosenTablesNumbers.contains(where: {$0 == cafe.tables[tableIndex].number}) {
                 cafe.tables[tableIndex].status = .isChosen
             }
         }

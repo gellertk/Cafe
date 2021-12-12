@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB5A3B3427626E0E00F485CE /* CheckTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A3B3327626E0E00F485CE /* CheckTableViewController.swift */; };
+		CB5A3B362762708900F485CE /* CheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A3B352762708900F485CE /* CheckTableViewCell.swift */; };
+		CB5A3B3A2762824000F485CE /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5A3B392762824000F485CE /* Position.swift */; };
 		CBB19666276146BA007022EA /* OtherFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB19665276146BA007022EA /* OtherFunction.swift */; };
 		CBC23A612759208300400EA3 /* TableChooserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC23A602759208300400EA3 /* TableChooserViewController.swift */; };
 		CBC23A6327593C8D00400EA3 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC23A6227593C8D00400EA3 /* Table.swift */; };
@@ -17,13 +20,15 @@
 		CBCBF84A27537D1200217EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCBF84927537D1200217EE0 /* Assets.xcassets */; };
 		CBCBF84D27537D1200217EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCBF84B27537D1200217EE0 /* LaunchScreen.storyboard */; };
 		CBCBF85627537F6B00217EE0 /* RegistationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBF85527537F6B00217EE0 /* RegistationViewController.swift */; };
-		CBCBF85827537F8E00217EE0 /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBF85727537F8E00217EE0 /* CheckViewController.swift */; };
 		CBCBF85A27539BBE00217EE0 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBF85927539BBD00217EE0 /* Cafe.swift */; };
 		CBCBF85C2753EBAA00217EE0 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBF85B2753EBAA00217EE0 /* UIButtonExtension.swift */; };
 		CBCBF85E2753EBC700217EE0 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCBF85D2753EBC700217EE0 /* UITextFieldExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB5A3B3327626E0E00F485CE /* CheckTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTableViewController.swift; sourceTree = "<group>"; };
+		CB5A3B352762708900F485CE /* CheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTableViewCell.swift; sourceTree = "<group>"; };
+		CB5A3B392762824000F485CE /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		CBB19665276146BA007022EA /* OtherFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherFunction.swift; sourceTree = "<group>"; };
 		CBC23A602759208300400EA3 /* TableChooserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableChooserViewController.swift; sourceTree = "<group>"; };
 		CBC23A6227593C8D00400EA3 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
@@ -36,7 +41,6 @@
 		CBCBF84C27537D1200217EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBCBF84E27537D1200217EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBCBF85527537F6B00217EE0 /* RegistationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistationViewController.swift; sourceTree = "<group>"; };
-		CBCBF85727537F8E00217EE0 /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
 		CBCBF85927539BBD00217EE0 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		CBCBF85B2753EBAA00217EE0 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		CBCBF85D2753EBC700217EE0 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
@@ -72,12 +76,14 @@
 		CBCBF83F27537D0E00217EE0 /* Cafe */ = {
 			isa = PBXGroup;
 			children = (
+				CB5A3B392762824000F485CE /* Position.swift */,
 				CBCBF84427537D0E00217EE0 /* SignInViewController.swift */,
 				CBC23A6227593C8D00400EA3 /* Table.swift */,
 				CBB19665276146BA007022EA /* OtherFunction.swift */,
 				CBCBF85527537F6B00217EE0 /* RegistationViewController.swift */,
 				CBC23A602759208300400EA3 /* TableChooserViewController.swift */,
-				CBCBF85727537F8E00217EE0 /* CheckViewController.swift */,
+				CB5A3B3327626E0E00F485CE /* CheckTableViewController.swift */,
+				CB5A3B352762708900F485CE /* CheckTableViewCell.swift */,
 				CBCBF85B2753EBAA00217EE0 /* UIButtonExtension.swift */,
 				CBCBF85D2753EBC700217EE0 /* UITextFieldExtension.swift */,
 				CBCBF85927539BBD00217EE0 /* Cafe.swift */,
@@ -170,16 +176,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB5A3B3A2762824000F485CE /* Position.swift in Sources */,
 				CBC23A612759208300400EA3 /* TableChooserViewController.swift in Sources */,
 				CBCBF84527537D0E00217EE0 /* SignInViewController.swift in Sources */,
+				CB5A3B3427626E0E00F485CE /* CheckTableViewController.swift in Sources */,
 				CBCBF85E2753EBC700217EE0 /* UITextFieldExtension.swift in Sources */,
 				CBB19666276146BA007022EA /* OtherFunction.swift in Sources */,
 				CBCBF84127537D0E00217EE0 /* AppDelegate.swift in Sources */,
 				CBCBF85A27539BBE00217EE0 /* Cafe.swift in Sources */,
+				CB5A3B362762708900F485CE /* CheckTableViewCell.swift in Sources */,
 				CBCBF85627537F6B00217EE0 /* RegistationViewController.swift in Sources */,
 				CBC23A6327593C8D00400EA3 /* Table.swift in Sources */,
 				CBCBF85C2753EBAA00217EE0 /* UIButtonExtension.swift in Sources */,
-				CBCBF85827537F8E00217EE0 /* CheckViewController.swift in Sources */,
 				CBCBF84327537D0E00217EE0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

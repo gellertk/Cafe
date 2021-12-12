@@ -22,9 +22,14 @@ class SignInViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         imgPasswordEye.addGestureRecognizer(tapGestureRecognizer)
         signInButton.layer.cornerRadius = 12
-        for case let textField as UITextField in self.view.subviews {
-            textField.addOnlyBottomBorder()
-        }
+//        for case let textField as UITextField in self.view.subviews {
+//            textField.addOnlyBottomBorder()
+//        }
+        lblValidationMessage.isHidden = true
+    }
+        
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        false
     }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
@@ -49,7 +54,10 @@ class SignInViewController: UIViewController {
             }
         } else {
             wrongLogin("Email is not valid")
+            return
         }
+        performSegue(withIdentifier: "showRegistrationVC", sender: nil)
+        lblValidationMessage.isHidden = true
     }
     
     func wrongLogin( _ message: String) {

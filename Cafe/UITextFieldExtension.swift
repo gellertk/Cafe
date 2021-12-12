@@ -15,6 +15,7 @@ extension UITextField {
         bottomLine.backgroundColor = #colorLiteral(red: 0.8310931921, green: 0.8312582374, blue: 0.8424424529, alpha: 1)
         borderStyle = .none
         layer.addSublayer(bottomLine)
+        layer.masksToBounds = true
     }
     
 }

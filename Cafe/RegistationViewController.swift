@@ -7,7 +7,11 @@
 
 import UIKit
 
-class RegistationViewController: UIViewController {
+protocol ViewControllerDelegate {
+    func updateTableNumbers(tables: [Table])
+}
+
+class RegistationViewController: UIViewController, ViewControllerDelegate {
     
     @IBOutlet weak var txtFIO: UITextField!
     @IBOutlet weak var txtGuestCount: UITextField!
@@ -21,14 +25,29 @@ class RegistationViewController: UIViewController {
     }
     
     @IBAction func showTables(_ sender: UITextField) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let tableChooserVC = storyboard.instantiateViewController(identifier: "tableChooserVC") as? TableChooserViewController else { return }
-        if var chosenTableString = txtTableNumber.text, chosenTableString != "" {
-            chosenTableString = chosenTableString.replacingOccurrences(of: " ", with: "")
-            let chosenTablesNumbers = chosenTableString.components(separatedBy: ",").map( {Int($0) ?? 0} )
-            tableChooserVC.chosenTablesNumbers = chosenTablesNumbers
+        performSegue(withIdentifier: "showTables", sender: sender)
+    }
+    
+    @IBAction func showCheck(_ sender: UIButton) {
+        let alert = UIAlertController(title: "", message: "Показать чек?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ОК", style: .default, handler: {[unowned self] _ in performSegue(withIdentifier: "showCheckVC", sender: sender)}))
+        alert.addAction(UIAlertAction(title: "Отмена", style: .cancel))
+        self.present(alert, animated: true)
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return false
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let tableChooserVC = segue.destination as? TableChooserViewController {
+            if var chosenTableString = txtTableNumber.text, chosenTableString != "" {
+                chosenTableString = chosenTableString.replacingOccurrences(of: " ", with: "")
+                let chosenTablesNumbers = chosenTableString.components(separatedBy: ",").map( {Int($0) ?? 0} )
+                tableChooserVC.chosenTablesNumbers = chosenTablesNumbers
+            }
+            tableChooserVC.delegate = self
         }
-        present(tableChooserVC, animated: true, completion: nil)
     }
     
     func updateTableNumbers(tables: [Table]) {
@@ -43,6 +62,8 @@ class RegistationViewController: UIViewController {
                     txtTableNumber.text! += String(tables[index].number)
                 }
             }
+            
+            //TODO: Change to map{}
         }
     }
 }
