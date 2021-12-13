@@ -19,9 +19,10 @@ class RegistationViewController: UIViewController, ViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        for case let textField as UITextField in self.view.subviews {
-            textField.addOnlyBottomBorder()
-        }
+        txtFIO.addOnlyBottomBorder()
+        txtGuestCount.addOnlyBottomBorder()
+        txtTableNumber.addOnlyBottomBorder()
+        self.hideKeyboardWhenTappedAround()
     }
     
     @IBAction func showTables(_ sender: UITextField) {

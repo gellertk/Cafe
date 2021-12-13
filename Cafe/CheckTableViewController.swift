@@ -9,15 +9,20 @@ import UIKit
 
 class CheckTableViewController: UITableViewController {
     
-    @IBOutlet weak var lblVisiterName: UILabel!
+    //@IBOutlet weak var lblVisiterName: UILabel!
+    @IBOutlet weak var lblSum: UILabel!
     var menu = [Position]()
     var chosenTables : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var sum = 0
         for i in 1...2 {
-            menu.append(Position.init(positionNumber: i))
+            let newPosition = Position.init(positionNumber: i)
+            menu.append(newPosition)
+            sum += newPosition.price
         }
+        lblSum.text = "Итого: \(String(sum)) руб."
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

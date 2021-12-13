@@ -11,7 +11,7 @@ struct Position {
     
     var name: String
     var ingridients: String
-    var price: Double
+    var price: Int
     
     init(positionNumber: Int) {
         switch positionNumber {

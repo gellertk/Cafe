@@ -22,10 +22,10 @@ class SignInViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         imgPasswordEye.addGestureRecognizer(tapGestureRecognizer)
         signInButton.layer.cornerRadius = 12
-//        for case let textField as UITextField in self.view.subviews {
-//            textField.addOnlyBottomBorder()
-//        }
+        txtEmail.addOnlyBottomBorder()
+        txtPassword.addOnlyBottomBorder()
         lblValidationMessage.isHidden = true
+        self.hideKeyboardWhenTappedAround()
     }
         
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -67,6 +67,17 @@ class SignInViewController: UIViewController {
     }
 
 }
-    
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
 
 
