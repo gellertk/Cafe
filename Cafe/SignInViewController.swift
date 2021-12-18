@@ -18,14 +18,22 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imgPasswordEye.image = UIImage(named: "openedEye")
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        imgPasswordEye.addGestureRecognizer(tapGestureRecognizer)
-        signInButton.layer.cornerRadius = 12
+        setViewParameters()
+    }
+    
+    func setViewParameters() {
+        createEyeTapRecognizer()
         txtEmail.addOnlyBottomBorder()
         txtPassword.addOnlyBottomBorder()
         lblValidationMessage.isHidden = true
+        signInButton.layer.cornerRadius = 12
         self.hideKeyboardWhenTappedAround()
+    }
+    
+    func createEyeTapRecognizer() {
+        imgPasswordEye.image = UIImage(named: "openedEye")
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        imgPasswordEye.addGestureRecognizer(tapGestureRecognizer)
     }
         
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {

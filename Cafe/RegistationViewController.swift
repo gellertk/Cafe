@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol ViewControllerDelegate {
+protocol ViewControllerDelegate : AnyObject {
     func updateTableNumbers(tables: [Table])
 }
 
@@ -63,8 +63,6 @@ class RegistationViewController: UIViewController, ViewControllerDelegate {
                     txtTableNumber.text! += String(tables[index].number)
                 }
             }
-            
-            //TODO: Change to map{}
         }
     }
 }
