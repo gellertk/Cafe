@@ -31,7 +31,7 @@ class RegistationViewController: UIViewController, ViewControllerDelegate {
     
     @IBAction func showCheck(_ sender: UIButton) {
         let alert = UIAlertController(title: "", message: "Показать чек?", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "ОК", style: .default, handler: {[unowned self] _ in performSegue(withIdentifier: "showCheckVC", sender: sender)}))
+        alert.addAction(UIAlertAction(title: "ОК", style: .default, handler: { [weak self] _ in self?.performSegue(withIdentifier: "showCheckVC", sender: sender)}))
         alert.addAction(UIAlertAction(title: "Отмена", style: .cancel))
         self.present(alert, animated: true)
     }

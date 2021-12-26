@@ -35,40 +35,37 @@ class SignInViewController: UIViewController {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         imgPasswordEye.addGestureRecognizer(tapGestureRecognizer)
     }
-        
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        false
-    }
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         if imgPasswordEye.image == UIImage(named: "openedEye") {
             imgPasswordEye.image = UIImage(named: "closedEye")
-            txtPassword.isSecureTextEntry = false
         } else {
             imgPasswordEye.image = UIImage(named: "openedEye")
-            txtPassword.isSecureTextEntry = true
         }
+        txtPassword.isSecureTextEntry = !txtPassword.isSecureTextEntry
     }
     
     @IBAction func loginUser(_ sender: UIButton) {
         guard let email = txtEmail.text, txtEmail.text?.count != 0 else {
-            wrongLogin("Enter correct email")
+            showValidationError("Enter correct email")
             return
         }
         if isValidEmail(emailID: email) {
             guard let _ = txtPassword.text, txtPassword.text?.count != 0 else {
-                wrongLogin("Enter correct password")
+                showValidationError("Enter correct password")
                 return
             }
         } else {
-            wrongLogin("Email is not valid")
+            showValidationError("Email is not valid")
             return
         }
-        performSegue(withIdentifier: "showRegistrationVC", sender: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+          guard let registrationVC = storyboard.instantiateViewController(identifier: "RegistrationVC") as? RegistationViewController else { return }
         lblValidationMessage.isHidden = true
+        show(registrationVC, sender: nil)
     }
     
-    func wrongLogin( _ message: String) {
+    func showValidationError( _ message: String) {
         lblValidationMessage.text = message
         lblValidationMessage.isHidden = false
         buttonSignIn.shake()
@@ -80,7 +77,6 @@ extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-
     }
 
     @objc func dismissKeyboard() {
